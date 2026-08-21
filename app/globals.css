@@ -369,6 +369,16 @@ button, summary { font: inherit; }
 .support-state > p { margin: 0 0 12px; font-size: 9px; letter-spacing: .2em; }
 .support-state h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 33px; }
 .support-state > span:last-child { color: #65715d; font-size: 12px; }
+.sponsor-list-heading { width: 100%; padding: 48px 50px 26px; text-align: left; }
+.sponsor-list-heading p { margin: 0 0 10px; font-size: 9px; letter-spacing: .2em; }
+.sponsor-list-heading h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 33px; }
+.sponsor-list-heading span { color: #65715d; font-size: 11px; }
+.sponsor-list { width: 100%; margin: 0; padding: 0 50px 42px; list-style: none; }
+.sponsor-list li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; min-height: 43px; border-top: 1px solid rgba(24,32,24,.14); text-align: left; }
+.sponsor-list small { color: #738066; font-size: 9px; }
+.sponsor-list strong { min-width: 0; padding-right: 14px; overflow-wrap: anywhere; font-family: var(--serif); font-size: 14px; font-weight: 600; }
+.sponsor-list li > span { color: var(--green-deep); font-family: var(--serif); font-size: 17px; font-weight: 700; }
+.sponsor-list b { margin-right: 2px; font-family: var(--sans); font-size: 9px; font-weight: 500; }
 .support-copy { padding: 74px; color: #fff; background: var(--green-deep); }
 .support-copy h2 { margin: 0 0 54px; font-family: var(--serif); font-size: 48px; line-height: 1.2; letter-spacing: -.04em; }
 .use-list article { display: grid; grid-template-columns: 48px 1fr; gap: 12px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.2); }
@@ -433,7 +443,10 @@ button, summary { font: inherit; }
   .sponsor-hero { padding-top: 155px; padding-bottom: 70px; }
   .sponsor-hero h1 { font-size: 50px; }
   .support-panel { grid-template-columns: 1fr; margin-bottom: 80px; }
-  .support-state { min-height: 470px; }
+  .support-state { min-height: 0; }
+  .sponsor-list-heading { padding: 44px 28px 24px; }
+  .sponsor-list { padding: 0 28px 42px; }
+  .sponsor-list li { grid-template-columns: 30px minmax(0, 1fr) auto; min-height: 46px; }
   .support-copy { padding: 54px 28px; }
   .support-copy h2 { font-size: 39px; }
   .sponsor-cta { align-items: flex-start; justify-content: center; flex-direction: column; }

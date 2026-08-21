@@ -14,6 +14,19 @@ const uses = [
   ["03", "社区活动", "用于玩家活动、纪念内容与社区共同项目。"],
 ];
 
+const sponsors = [
+  ["es服主芜湖", "850"],
+  ["洛阳", "765"],
+  ["魔王", "544.94"],
+  ["wcc", "70"],
+  ["楼下差1块钱不凹", "21"],
+  ["wusihan", "20"],
+  ["卡提希娅的乔治", "20"],
+  ["猫娘", "13"],
+  ["Mauve Tag7855757", "11.3"],
+  ["tan", "10"],
+];
+
 export default function SponsorsPage() {
   return (
     <main className="inner-page sponsor-page">
@@ -23,15 +36,25 @@ export default function SponsorsPage() {
           <p className="eyebrow">COMMUNITY SUPPORT</p>
           <h1>每一份支持，<br />都让世界走得更远。</h1>
         </div>
-        <p>赞助榜名单正在整理中。我们会把每一次支持认真记录，也会让它回到服务器的长期运行与社区体验中。</p>
+        <p>感谢每一位支持服务器持续运行的社区成员。每一次帮助都会被认真记录，也会回到服务器的长期运行与社区体验中。</p>
       </section>
 
       <section className="support-panel page-width">
         <div className="support-state">
-          <span className="support-orbit" aria-hidden="true"><i>乌</i></span>
-          <p>SPONSOR LIST</p>
-          <h2>名单整理中</h2>
-          <span>首批记录更新后将在这里公开致谢</span>
+          <div className="sponsor-list-heading">
+            <p>SPONSOR LIST</p>
+            <h2>赞助鸣谢</h2>
+            <span>按累计赞助金额排序</span>
+          </div>
+          <ol className="sponsor-list">
+            {sponsors.map(([name, amount], index) => (
+              <li key={name}>
+                <small>{String(index + 1).padStart(2, "0")}</small>
+                <strong>{name}</strong>
+                <span><b>¥</b>{amount}</span>
+              </li>
+            ))}
+          </ol>
         </div>
         <div className="support-copy">
           <p className="eyebrow light">WHERE IT GOES</p>
