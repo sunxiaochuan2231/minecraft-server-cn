@@ -2,6 +2,8 @@
 
 乌合之众 Minecraft 基岩版社区服务器的中文官方网站。包含主页面、服务器玩法、封神榜、赞助榜和加入我们五个主页面，并提供规则与插件玩法的详细子页面。
 
+在线访问：https://sunxiaochuan2231.github.io/minecraft-server-cn/
+
 ## 页面
 
 - `/`：服务器主页面
@@ -28,6 +30,15 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## GitHub Pages 静态导出
+
+```bash
+npm run build
+npm run export:pages
+```
+
+静态文件输出到 `pages-dist`。推送到 `main` 后，GitHub Actions 会自动构建并部署 Pages。
 
 网站图片位于 `public/images`，页面内容位于 `app`，共用页头和页脚位于 `components`。
 
